@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOTUS</title>
+    <link href="css/login.css" rel="stylesheet" />
+    <link href="css/main-column_first.css" rel="stylesheet" />
+    <link href="css/main-column_last.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-contents">
+      <div class="main-column">
+        <div class="control-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img src="img/4.PNG" />
+
+        <h2 id="clock"></h2>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="login-form">
+          <input type="text" placeholder="What's your name?" required />
+          <button>Log In</button>
+        </form>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main-column">
+        <span class="todo-list_title">ToDo List</span>
+        <form id="todo-input">
+          <input type="text" placeholder="Write to do and press" required />
+        </form>
+        <div id="todo-form">
+          <ul id="todo-list"></ul>
+        </div>
+        <div id="quotes">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
