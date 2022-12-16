@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  height: 25px;
+  background-color: #0063fb;
+  border-bottom: 1px solid #0449af;
+}
+.header span {
+  font-size: 20px;
+}
+.header-icon i {
+  margin-left: 2px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 2px;
+  background-color: #386ff4;
+}
+.header-icon i:last-child {
+  width: 15px;
+  padding-left: 6px;
+  background-color: #e95622;
+}
+.menu {
+  background-color: #ece9d8;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0px;
+  font-size: 25px;
+  height: 30px;
+}

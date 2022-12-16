@@ -1,0 +1,25 @@
+.color-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ece9d8;
+  height: 151px;
+  gap: 20px;
+}
+.color-option {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #72716f;
+  transition: transform ease-in-out 0.1s;
+  cursor: pointer;
+}
+.color-option:hover {
+  transform: scale(1.15);
+}
+.color-options input {
+  width: 55px;
+  height: 55px;
+  margin-left: 38px;
+  background-color: white;
+  border: 2px solid #72716f;
+}
