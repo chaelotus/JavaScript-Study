@@ -1,0 +1,20 @@
+body {
+  margin: initial;
+  padding: initial;
+  font-size: 32px;
+}
+#screen {
+  width: 60vw;
+  height: 60vh;
+  text-align: center;
+}
+.waiting {
+  background-color: aqua;
+}
+.ready {
+  background-color: red;
+  color: white;
+}
+.now {
+  background-color: greenyellow;
+}
