@@ -1,0 +1,11 @@
+#hero-start,
+#monster-start {
+  color: brown;
+  font-weight: 600;
+}
+#hero-hp {
+  color: red;
+}
+#hero-xp {
+  color: blue;
+}
