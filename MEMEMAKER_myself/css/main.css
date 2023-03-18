@@ -1,0 +1,88 @@
+/*main*/
+button,
+#image-upload {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e0d1;
+  font-family: "Secular One", sans-serif;
+  cursor: pointer;
+  transform: background-color ease-in-out 0.1s;
+}
+#image-upload {
+  border: 2px solid #767676;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 12px;
+}
+button:hover,
+#image-upload:hover {
+  background-color: #ceccbf;
+}
+.main-box {
+  display: flex;
+  height: 630px;
+  font-family: "Secular One", sans-serif;
+}
+.main-box_btn {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 85px 70px 50px 80px;
+  gap: 3px;
+}
+.main-box input[type="range"][orient="vertical"] {
+  display: inherit;
+  -webkit-appearance: slider-vertical;
+  margin: 0 auto;
+  accent-color: black;
+}
+#input_value {
+  display: block;
+  text-align: center;
+}
+.main-box_file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 190px 0px auto 0px;
+}
+
+.fileinput {
+  display: none;
+}
+#font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+#font-select {
+  width: 100%;
+  text-align: center;
+}
+#font-select #font-type {
+  width: 43%;
+}
+#font-select input,
+#font-select select {
+  padding: initial;
+}
+#text {
+  width: 200px;
+  height: 20px;
+  font-weight: 600;
+  font-family: "Secular One", sans-serif;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  transform: outline ease-in-out 0.3s;
+}
+#text:focus {
+  outline: 2px solid #b4b3a7;
+}

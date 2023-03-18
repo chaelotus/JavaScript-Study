@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎨 MEME-MAKER</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/b6b675a5b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Gemstones&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Secular+One&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <span>제목 없음 - 그림판</span>
+        <div class="header-icon">
+          <i class="fa-solid fa-window-minimize"></i>
+          <i class="fa-regular fa-window-maximize"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">파일(F)</a></li>
+          <li><a href="#">편집(E)</a></li>
+          <li><a href="#">보기(V)</a></li>
+          <li><a href="#">이미지(I)</a></li>
+          <li><a href="#">색(C)</a></li>
+          <li><a href="#">도움말(H)</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-box">
+        <aside>
+          <div class="main-box_btn">
+            <button id="pencil-btn"><img src="img/pencil.png" /></button>
+            <button id="paint-btn"><img src="img/paint.png" /></button>
+            <button id="rec-btn"><img src="img/rec.png" /></button>
+            <button id="circle-btn"><img src="img/circle.png" /></button>
+            <button id="text-btn"><img src="img/text.png" /></button>
+            <button id="eraser-btn"><img src="img/erase.png" /></button>
+            <button id="destroy-btn">EMPTY</button>
+          </div>
+          <span id="input_value">5</span>
+          <input
+            id="line-width"
+            type="range"
+            min="1"
+            max="10"
+            value="5"
+            orient="vertical"
+          />
+        </aside>
+        <div class="main-box_contents">
+          <canvas></canvas>
+        </div>
+        <aside>
+          <div class="main-box_file">
+            <label for="filelabel">
+              <div id="image-upload">IMAGE</div>
+              <input
+                type="file"
+                accept="image/*"
+                id="filelabel"
+                class="fileinput"
+              />
+            </label>
+            <div id="font">
+              <div id="font-select">
+                <input
+                  type="number"
+                  min="1"
+                  max="45"
+                  value="25"
+                  id="font-size"
+                />
+                <select id="font-type" autocomplete="off" required>
+                  <option
+                    value="'Secular One', sans-serif"
+                    style="font-family: 'Secular One', sans-serif"
+                    selected
+                  >
+                    sans-serif
+                  </option>
+                  <option
+                    value="'Rubik Vinyl'"
+                    style="font-family: 'Rubik Vinyl', cursive"
+                  >
+                    Vinyl
+                  </option>
+                  <option
+                    value="'Rubik 80s Fade'"
+                    style="font-family: 'Rubik 80s Fade', cursive"
+                  >
+                    80s Fade
+                  </option>
+                  <option
+                    value="'Rubik Gemstones'"
+                    style="font-family: 'Rubik Gemstones', cursive"
+                  >
+                    Gemstones
+                  </option>
+                  <option
+                    value="'Rubik Spray Paint'"
+                    style="font-family: 'Rubik Spray Paint', cursive"
+                  >
+                    Spray Paint
+                  </option>
+                  <option
+                    value="'Unbounded'"
+                    style="font-family: 'Unbounded', cursive"
+                  >
+                    Unbounded
+                  </option>
+                </select>
+                <select id="font-weight">
+                  <option value="normal" selected>normal</option>
+                  <option value="bold">bold</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Add text here... :)" id="text" />
+            </div>
+            <button id="save">🖼 Save</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <div class="color-options">
+        <div
+          class="color-option"
+          style="background-color: #1abc9c"
+          data-color="#1abc9c"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #2ecc71"
+          data-color="#2ecc71"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #3498db"
+          data-color="#3498db"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #9b59b6"
+          data-color="#9b59b6"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #34495e"
+          data-color="#34495e"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #2980b9"
+          data-color="#2980b9"
+        ></div>
+
+        <div
+          class="color-option"
+          style="background-color: #2c3e50"
+          data-color="#2c3e50"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #f1c40f"
+          data-color="#f1c40f"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e67e22"
+          data-color="#e67e22"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e74c3c"
+          data-color="#e74c3c"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ecf0f1"
+          data-color="#ecf0f1"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #95a5a6"
+          data-color="#95a5a6"
+        ></div>
+        <input type="color" id="color" />
+      </div>
+    </footer>
+    <div id="media-screen">
+      <span>화면을 1500x800 이상으로 넓혀주세요.</span>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
